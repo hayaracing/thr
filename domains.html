@@ -1,89 +1,339 @@
+<!--This the home page, it is known as index.html because the way github acts--->
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Domains | Team Haya Racing</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./timeline.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Domains</title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-menu nleft">
-    <a href="index.html" class="brand">PESUxHayaRacing</a>
-  </div>
-
-  <div class="bar"></div>
-
-  <div class="nav-menu nright">
-    <a href="index.html" class="nav-item">Home</a>
-<a href="aboutus.html" class="nav-item">About us</a>
-<a href="ach.html" class="nav-item">Achievements</a>
-<a href="sponsors.html" class="nav-item">Sponsors</a>
-<a href="events.html" class="nav-item">Events</a>
-<a href="domains.html" class="nav-item"><span>Domains</span></a>
-  </div>
-</nav>
-
-<!-- CONTAINER -->
-<div class="container">
-
-  <!-- LEFT SIDE BAR  -->
-  <div class="left-side">
-    <h2>
- <a href="https://www.facebook.com/teamhayaracing/" class="btn">
- <i class="fab fa-facebook" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://www.youtube.com/channel/UC9DMkRTbCaEDnw0bOJkiEnw" class="btn">
- <i class="fab fa-youtube" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://clubs.pes.edu/team-haya-racing" class="btn">
- <i class="fa fa-globe" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://www.instagram.com/hayaracing/" class="btn">
- <i class="fab fa-instagram" target="_blank"  aria-hidden="true"></i></a>
-</h2>
-  
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="content">
-    <div class="words">
-      <h1 class="title">Domains</h1>
-      <div class="article">
-        <h2 class="subtitle"></h2>
-        <p>The team is broadly categorized into a variety of Technical domains. Students are inducted into a domain based on their passion and relevant knowledge. Each domain has experienced significant growth since the inception of the team.
-		</p>
-      </div>
-
- 
-        <h2 class="subtitle">- Powertrain</h2>
- <br>
-        <h2 class="subtitle">- Chassis</h2>
-<br>
-        <h2 class="subtitle">- Composites</h2>
-<br>
-        <h2 class="subtitle">- Vehical Dynamics</h2>
-<br>
-        <h2 class="subtitle">- Brakes & Wheels</h2>
-<br>
-        <h2 class="subtitle">- Electrical</h2>
-
-      </div>
-
+<!--Nav-->
+  <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Menu</h5>
+            <span class="text-muted"><ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="achieve.html">Achivements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="./domains.html">Domains</a></li>
+                <li><a href="sponsor.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex flex-row justify-content-end">
+          <div class="navbar-toggler">
+                <a href="https://www.facebook.com/teamhayaracing/"><i class="fab fa-facebook" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          <div class="navbar-toggler">
+                <a href="https://www.instagram.com/hayaracing/" tabindex="-1" aria-disabled="true"><i class="fab fa-instagram" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          
+          <div class="navbar-toggler">
+                <a href="https://www.youtube.com/channel/UC9DMkRTbCaEDnw0bOJkiEnw"><i class="fab fa-youtube" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          <div class="navbar-toggler">
+                <a href="https://clubs.pes.edu/team-haya-racing"><i class="fa fa-globe" target="_blank"  aria-hidden="true"></i></a>
+          </div>
     </div>
-    <div class="shapes">
-      <div class="positioner">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="x1"><path fill="#F1F1F1" d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" id="x2"><path fill="none" stroke="#F1F1F1" stroke-width="1" stroke-linecap="butt"  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" id="x3"><path fill="none" stroke="#F1F1F1" stroke-width="1" stroke-linecap="butt"  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+
+        </nav>
       </div>
+
+      <div class="jumbotron header">
+        <div class="row">
+            <h1 class="heading display-4 col col-12">Domains</h1>
+            <p class="lead col-8 col offset-2 offset-md-3 col-md-6"></p>
+            <hr class="my-4 col-10 col col-md-8">
+        </div>
     </div>
+
+    <!--Powertrain-->
+    <!---The slider-->
+    <div id="Powertrain" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Powertrain" data-slide-to="0" class="active"></li>
+        <li data-target="#Powertrain" data-slide-to="1"></li>
+        <li data-target="#Powertrain" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="img/IMG_20191026_144853_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_020519_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_140046_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>4th slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Powertrain" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Powertrain" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Powertrain</h2>
+  <div>
+      <p>
+        The domain's most important goal is to generate and transfer as much power and torque to the rear wheels of the racecar, whilst adhering to the rule and regulations of the competition.
+The car competing in 2020 uses innovative manufacturing processes such as Multi-Jet-Fusion 3D printing, to reduce weight, and fundamental engineering principals in thermodynamics and strength of materials, to maximize the efficiency of subsystems such as the cooling system, to extract the maximum out of KTM's 373cc powered package.
+      </p>
   </div>
-<div class="left-bar"></div>
+  <hr>
 </div>
-<!-- partial -->
-  
+<!-------------------------------------------------------------------------->
+    <!---The slider-->
+    <div id="Chassi" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Chassi" data-slide-to="0" class="active"></li>
+        <li data-target="#Chassi" data-slide-to="1"></li>
+        <li data-target="#Chassi" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="img/IMG_20191026_144853_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_020519_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_140046_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>4th slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Chassi" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Chassi" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Chassi</h2>
+  <div>
+      <p>
+        What gives a car it’s shape? It’s strength? How do we make sure we don’t lose a few parts every corner? What does every moving body require? We need a support structure which can house all the other components so that they can do what they're meant to do! This is what a Chassis does. It's provides a framework to the whole car and supports every part that is required to move it.
+We at Team Haya Racing use a steel tubular space frame chassis to form the skeleton of our car. Steel tubes are laser cut to precision and welded in-house to produce a nimble yet rigid, light yet strong chassis! In the 10 years of Team Haya the chassis is arguable the most developed. Losing weight every year and getting ever more compact! The bulkhead and the two roll hoops form the basic structure of the chassis. The primary impact structure is ahead of the bulkhead whereas the pedals, steering, front axle and the wheels are in between the bulkhead and the front roll hoop. The region between the the two roll hoops forms the cockpit and seats the driver with a side impact structure on both sides for protection. The power train is housed behind the rear roll hoop with the rear wheels, driven by a manual gearbox. The team has managed to reduce the overhang and achieved compact packing of the power train components. The hunt for perfection would never stop!
+      </p>
+  </div>
+  <hr>
+</div>
+<!-------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------->
+    <!---The slider-->
+    <div id="Composite" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Composite" data-slide-to="0" class="active"></li>
+        <li data-target="#Composite" data-slide-to="1"></li>
+        <li data-target="#Composite" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="img/IMG_20191026_144853_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_020519_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_140046_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>4th slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Composite" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Composite" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Composites</h2>
+  <div>
+      <p>
+        The power to weight ratio of an automobile is a performance indicator of an automobile and increasing it is a challenge, an important one at that! This can be done in two ways. One is to increase the power and the other is to reduce weight. The former is often a tricky approach given that it's often accompanied by increase in weight and in cost! Reducing weight is a relatively easier approach. Composites provide a good solution. They are combinations of two materials which have contrasting characteristics but when used to make the same structure produce extraordinary results. They are lightweight with superb strength and structural properties.
+We at THR use Glass Fiber Reinforced Polymer (GFRP) to manufacture all our bodyworks. Glass fiber and resin are layed up in-house using the technique of vacuum bagging. We pride ourself for the fact that THR is one of the very few teams in the country that manufactures all its bodyworks in-house. The team will continue its research on improving the quality of GFRP we produce and aims to switch to carbon fiber in the coming years.
+      </p>
+  </div>
+  <hr>
+</div>
+<!-------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------->
+    <!---The slider-->
+    <div id="Aero" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Aero" data-slide-to="0" class="active"></li>
+        <li data-target="#Aero" data-slide-to="1"></li>
+        <li data-target="#Aero" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="img/IMG_20191026_144853_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_020519_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_140046_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>4th slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Aero" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Aero" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Aero</h2>
+  <div>
+      <p>
+        To put it simply it is the study of the dynamics air around a body. The aim and the outcome of this study (just a touch more complicated) is to reduce the resistance offered by a body to the flow of air. When it comes to automobiles and especially racing cars, an added necessity is to increase the downward force on the vehicle in order to increase the grip and hence the lateral acceleration capability.
+The challenge in this exercise is to minimize the drag (resistance to flow) and increase the downforce (downward force). This is easier said than done as the two quantities, drag and downforce are directly proportional to one another!
+THR is in the process of developing an Aero pack to help accomplish just that and this would be tested in the immediate future!
+      </p>
+  </div>
+  <hr>
+</div>
+<!-------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------->
+    <!---The slider-->
+    <div id="Brakes" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#Brakes" data-slide-to="0" class="active"></li>
+        <li data-target="#Brakes" data-slide-to="1"></li>
+        <li data-target="#Brakes" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="img/IMG_20191026_144853_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_020519_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/IMG_20191114_140046_HDR - Shreyas Padmaraman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>4th slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Brakes" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Brakes" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Brakes</h2>
+  <div>
+    This domain deals with stopping the car, making an ergonomic pedal box for the driver and the key components that connect the wheels to the suspension. We some of the best parts to make our braking system more reliable. This car is equipped with Tilton 78-series pivoting master cylinders which not only makes the system lighter but also drastically small.
+Coming to the wheel assembly we make use of aerospace grade aluminium which is machined to very close tolerances with the help of precision CNC from Haas. These components are further anodised for better surface hardness, protect from other chemicals and also good surface finish.
+  </div>
+  <hr>
+</div>
+<!-------------------------------------------------------------------------->
+
+<!---Script tags that need to be here-->
+  <script  type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script  type="text/javascript" src="./js/bootstrap.min.js"></script>
 </body>
 </html>

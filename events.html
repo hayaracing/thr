@@ -1,87 +1,175 @@
+<!--This the home page, it is known as index.html because the way github acts--->
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Events | Team Haya Racing</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./timeline.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Events</title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-menu nleft">
-    <a href="index.html" class="brand">PESUxHayaRacing</a>
-  </div>
-
-  <div class="bar"></div>
-
-  <div class="nav-menu nright">
-    <a href="index.html" class="nav-item">Home</a>
-<a href="aboutus.html" class="nav-item">About us</a>
-<a href="ach.html" class="nav-item">Achievements</a>
-<a href="sponsors.html" class="nav-item">Sponsors</a>
-<a href="events.html" class="nav-item"><span>Events</span></a>
-<a href="domains.html" class="nav-item">Domains</a>
-  </div>
-</nav>
-
-<!-- CONTAINER -->
-<div class="container">
-
-  <!-- LEFT SIDE BAR  -->
-  <div class="left-side">
-    <h2>
- <a href="https://www.facebook.com/teamhayaracing/" class="btn">
- <i class="fab fa-facebook" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://www.youtube.com/channel/UC9DMkRTbCaEDnw0bOJkiEnw" class="btn">
- <i class="fab fa-youtube" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://clubs.pes.edu/team-haya-racing" class="btn">
- <i class="fa fa-globe" target="_blank"  aria-hidden="true"></i></a><br><br>
- <a href="https://www.instagram.com/hayaracing/" class="btn">
- <i class="fab fa-instagram" target="_blank"  aria-hidden="true"></i></a>
-</h2>
-  
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="content">
-    <div class="words">
-      <h1 class="title">Events</h1>
-      <div class="article">
-        <h2 class="subtitle">Formula Bharat </h2>
-        <p>Formula Bharat 
-is the Indian Chapter of Formula Student
-draws participation of students en masse from universities all over the country.
-involves competing with Formula-style race-cars in areas of  engineering, design, dynamics and business.
-is held at Kari Motor Speedway, Coimbatore in the month of January.
-
-		</p>
-      </div>
-	<div class="article">
-        <h2 class="subtitle">SUPRA</h2>
-        <p>SUPRA 
-is organized annually by SAEINDIA with the support of Maruti Suzuki. 
-provides a platform for students to design and construct a Formula-styled vehicle as per defined specifications. 
-is organised at the Buddh International Circuit, Greater Noida spanning 5 days during the month of July.
-		</p>
-      </div>
-
+<!--Nav-->
+  <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Menu</h5>
+            <span class="text-muted"><ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="achieve.html">Achivements</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="sponsor.html">Sponsors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex flex-row justify-content-end">
+          <div class="navbar-toggler">
+                <a href="https://www.facebook.com/teamhayaracing/"><i class="fab fa-facebook" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          <div class="navbar-toggler">
+                <a href="https://www.instagram.com/hayaracing/" tabindex="-1" aria-disabled="true"><i class="fab fa-instagram" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          
+          <div class="navbar-toggler">
+                <a href="https://www.youtube.com/channel/UC9DMkRTbCaEDnw0bOJkiEnw"><i class="fab fa-youtube" target="_blank"  aria-hidden="true"></i></a>
+          </div>
+          <div class="navbar-toggler">
+                <a href="https://clubs.pes.edu/team-haya-racing"><i class="fa fa-globe" target="_blank"  aria-hidden="true"></i></a>
+          </div>
     </div>
-    <div class="shapes">
-      <div class="positioner">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="x1"><path fill="#F1F1F1" d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" id="x2"><path fill="none" stroke="#F1F1F1" stroke-width="1" stroke-linecap="butt"  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" id="x3"><path fill="none" stroke="#F1F1F1" stroke-width="1" stroke-linecap="butt"  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+
+        </nav>
+      </div>
+
+      <div class="jumbotron header">
+        <div class="row">
+            <h1 class="heading display-4 col col-12">Events</h1>
+            <p class="lead col-8 col offset-2 offset-md-3 col-md-6"> A race car is built not for exhibition but as car to race and test our skills, hardwork and soul that has been poured into that car againts similar car freaks. We at Haya test them out in the following events. </p>
+            <hr class="my-4 col-10 col col-md-8">
+        </div>
+    </div>
+
+    <!--Formula Bharat-->
+    <!---The slider-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/image-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
+    <div class="carousel-item">
+      <img src="img/image-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
   </div>
-<div class="left-bar"></div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<!-- partial -->
-  
+
+<!--The info about the event-->
+<div class="article">
+  <h2>Formula Bharat</h2>
+  <div>
+      <p>
+        Formula Bharat is an engineering design competition in which students from colleges and universities all over the country, compete with a life-size Formula-style vehicle in areas of engineering design, overall cost, marketability and dynamic performance. The series replicates the global student Formula series hosted in around 11 countries per year.
+      </p>
+      <p>
+        The purpose of this competition is to encourage students to gain hands-on practical experience, while applying engineering theories studied in the classroom. In addition, students learn the art of management and teamwork, which are essential skills required in the ‘real-world’. These student teams are required to build a new vehicle from scratch year-after-year and seek sponsorship and donations by their own means to fund the project. 
+      </p>
+  </div>
+  <hr>
+</div>
+
+
+<!-- Sae Supra-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/image-2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/image-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="article">
+  <h2>Supra</h2>
+  <div>
+      <p>
+        The 6th edition of SUPRA SAEINDIA, India’s biggest formula student competition was kicked off with the Oath ceremony at the Formula 1 track at Buddh International Circuit in Greater Noida on 26th June, 2017. The oath ceremony for the student formula competition was administered by Mr. I V Rao, Chairman EEB, SAEINDIA and Executive Advisor, MSIL along with Mr. Deepak Sawkar, Convener SUPRA SAEINDIA 2017 and other Organising Committee Members. SUPRA is being organised annually by SAEINDIA with the support of Maruti Suzuki, the event provides a platform for students to apply their engineering skills to design and construct a Formula category vehicle as per defined performance and safety specifications. SUPRA SAEINDIA 2017 comprised of a series of Static and Dynamic events spread over five days, concluding with a final Endurance run and a valedictory function on July 1st, 2017.
+      </p>
+      <p>
+        Static Events Includes:
+        <ul class="list-align">
+          <li>Marketing Presentation</li>
+          <li>Engineering Design</li>
+          <li>Cost Evaluation</li>
+        </ul>
+      </p>
+      <p>
+        Dynamic Events Includes:
+        <ul class="list-align">
+          <li>Acceleration Event</li>
+          <li>Skid-Pad Event</li>
+          <li>Aurocross Event</li>
+          <li>Endurance</li>
+        </ul>
+      </p>
+  </div>
+  <hr>
+</div>
+
+
+<!---Script tags that need to be here-->
+  <script  type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script  type="text/javascript" src="./js/bootstrap.min.js"></script>
 </body>
 </html>
